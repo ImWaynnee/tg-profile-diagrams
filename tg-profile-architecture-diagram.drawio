@@ -1,0 +1,93 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.1">
+  <diagram name="Page-1" id="CLOCA12NSpduD85WpcYU">
+    <mxGraphModel dx="4261" dy="1404" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-oJC06npQDLTVk7xnE9J-32" value="" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Personal_Computer.svg;" parent="1" vertex="1">
+          <mxGeometry x="-1370.8" y="130" width="45.6" height="61.800000000000004" as="geometry" />
+        </mxCell>
+        <mxCell id="-oJC06npQDLTVk7xnE9J-33" value="Telegram Web App UI&lt;div&gt;(React.js)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-1439" y="360" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="-oJC06npQDLTVk7xnE9J-34" value="Telegram API" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;" parent="1" vertex="1">
+          <mxGeometry x="-1640" y="510" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-oJC06npQDLTVk7xnE9J-35" value="Backend Services" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-1439" y="490" width="286" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="-oJC06npQDLTVk7xnE9J-36" value="Telegram Bot API&lt;div&gt;Service (node-telegram-bot-api)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="-oJC06npQDLTVk7xnE9J-35" vertex="1">
+          <mxGeometry x="26" y="110" width="216.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-oJC06npQDLTVk7xnE9J-37" value="Hasura Client" style="rounded=0;whiteSpace=wrap;html=1;" parent="-oJC06npQDLTVk7xnE9J-35" vertex="1">
+          <mxGeometry x="26" y="180" width="216.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-oJC06npQDLTVk7xnE9J-38" value="Multer" style="rounded=0;whiteSpace=wrap;html=1;" parent="-oJC06npQDLTVk7xnE9J-35" vertex="1">
+          <mxGeometry x="26" y="250" width="216.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-oJC06npQDLTVk7xnE9J-39" value="Node.JS" style="rounded=0;whiteSpace=wrap;html=1;" parent="-oJC06npQDLTVk7xnE9J-35" vertex="1">
+          <mxGeometry x="26" y="40" width="216.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-oJC06npQDLTVk7xnE9J-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="-oJC06npQDLTVk7xnE9J-41" target="-oJC06npQDLTVk7xnE9J-33" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-oJC06npQDLTVk7xnE9J-41" value="Cloudflare&lt;br&gt;(CDN, Proxy for Frontend)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-1439" y="260" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-oJC06npQDLTVk7xnE9J-42" value="Cloudflare CDN&lt;br&gt;(Image Storage)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-1053" y="880" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-oJC06npQDLTVk7xnE9J-46" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.39;exitY=1.036;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="-oJC06npQDLTVk7xnE9J-32" target="-oJC06npQDLTVk7xnE9J-41" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-1453" y="260" as="sourcePoint" />
+            <mxPoint x="-1403" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-oJC06npQDLTVk7xnE9J-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-oJC06npQDLTVk7xnE9J-38" target="-oJC06npQDLTVk7xnE9J-42" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-oJC06npQDLTVk7xnE9J-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;startArrow=block;startFill=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-oJC06npQDLTVk7xnE9J-37" target="-oJC06npQDLTVk7xnE9J-45" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1073" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-oJC06npQDLTVk7xnE9J-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="-oJC06npQDLTVk7xnE9J-33" target="-oJC06npQDLTVk7xnE9J-35" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1344" y="330" as="sourcePoint" />
+            <mxPoint x="-1344" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-oJC06npQDLTVk7xnE9J-51" value="EC2" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-1483" y="450" width="623" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="-oJC06npQDLTVk7xnE9J-43" value="Hasura Docker Container" style="swimlane;whiteSpace=wrap;html=1;" parent="-oJC06npQDLTVk7xnE9J-51" vertex="1">
+          <mxGeometry x="391.5" y="40" width="197" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="-oJC06npQDLTVk7xnE9J-44" value="Hasura GraphQL Engine (PostresQL)" style="rounded=0;whiteSpace=wrap;html=1;" parent="-oJC06npQDLTVk7xnE9J-43" vertex="1">
+          <mxGeometry x="40" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-oJC06npQDLTVk7xnE9J-45" value="Data Connector Agent" style="rounded=0;whiteSpace=wrap;html=1;" parent="-oJC06npQDLTVk7xnE9J-43" vertex="1">
+          <mxGeometry x="40" y="55" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-oJC06npQDLTVk7xnE9J-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="-oJC06npQDLTVk7xnE9J-52" target="-oJC06npQDLTVk7xnE9J-51" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-oJC06npQDLTVk7xnE9J-52" value="Jobstash Scraping Service" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-1211.5" y="190" width="227" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="-oJC06npQDLTVk7xnE9J-53" value="Jobstash Scraper" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;" parent="-oJC06npQDLTVk7xnE9J-52" vertex="1">
+          <mxGeometry x="53.5" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-oJC06npQDLTVk7xnE9J-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-oJC06npQDLTVk7xnE9J-36" target="-oJC06npQDLTVk7xnE9J-34" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-oJC06npQDLTVk7xnE9J-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" parent="1" source="-oJC06npQDLTVk7xnE9J-34" target="-oJC06npQDLTVk7xnE9J-34" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-oJC06npQDLTVk7xnE9J-59" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;IntroLink&lt;/h1&gt;&lt;p&gt;Telegram WebApp - &lt;br&gt;Social Identity &amp;amp; Networking Platform&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-1640" y="10" width="240" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
